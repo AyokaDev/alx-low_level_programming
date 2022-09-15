@@ -1,25 +1,23 @@
 #include "main.h"
 /**
- * print_sign - return the supposed sign of an interger
- * @value: the value to be evaluated
- * Return: return 1 if positive 0 if value = 0 and -1 if negative
+ * _abs - function to get the absolute value
+ *
+ * @n: parameter of the funtion
+ *
+ * Return: the absolute value
  */
-
-int print_sign(int value)
+int _abs(int n)
 {
-	if (value > 0)
+	if (n > 0)
 	{
-		_putchar('+');
-		return (1);
+		return (n);
 	}
-	else if (value == 0)
+	else if (n == 0)
 	{
-		_putchar('0');
 		return (0);
 	}
 	else
 	{
-		_putchar('-');
-		return (1);
+		return (-n);
 	}
 }
